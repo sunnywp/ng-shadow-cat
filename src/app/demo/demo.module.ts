@@ -5,6 +5,7 @@ import { NgModule }      from '@angular/core';
 import {CommonModule}      from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 import {LibModule} from '../lib/lib.module';
+import {ComponentsModule} from '../components/components.module';
 
 import {LoadingComponent} from './loading/loading.component';
 import {TabComponent} from './tab/tab.component';
@@ -66,7 +67,7 @@ import {RangeDateSelectorComponent} from './date-time-selector/range-date-select
 import {DropDrawerComponent} from './drawer/drawer.component';
 
 @NgModule({
-  imports: [CommonModule,FormsModule,LibModule],
+  imports: [CommonModule,FormsModule,LibModule,ComponentsModule],
   declarations: [LoadingComponent,TabComponent,ButtonComponent,MessageComponent,ToTopComponent,
     ToolTipComponent,HelpComponent,BreadCrumbComponent,PaginationComponent,SwitchComponent,
     RateComponent,RadioComponent,CheckboxComponent,CollapseComponent,RangeslideComponent,
