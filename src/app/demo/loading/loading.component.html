@@ -2,10 +2,9 @@
 <p>加载等待用于访问初始访问页面的加载等候，以及从后端获取数据的等待处理</p>
 
 <h3>1. 普通加载中</h3>
-<nc-loading [type]="'normal'" [loadSize]="'max'"></nc-loading>
-<nc-loading [type]="'normal'" [loadSize]="'medium'"></nc-loading>
-<nc-loading [loadSize]="'min'"></nc-loading>
+<div></div>
 <nc-spin></nc-spin>
+
 <p>使用方式:</p>
 <nc-tab [tabs]="tabItems1" [(selectTab)] = "currentTab1">
   <div *ngIf="currentTab1 === 'html'">
