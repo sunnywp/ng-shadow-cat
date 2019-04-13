@@ -2,8 +2,15 @@
 <p>加载等待用于访问初始访问页面的加载等候，以及从后端获取数据的等待处理</p>
 
 <h3>1. 普通加载中</h3>
-<div></div>
-<nc-spin></nc-spin>
+<div class="demo">
+  <nc-spin></nc-spin>
+</div>
+<div class="demo">
+  <nc-spin size="medium"></nc-spin>
+</div>
+<div class="demo">
+  <nc-spin size="small"></nc-spin>
+</div>
 
 <p>使用方式:</p>
 <nc-tab [tabs]="tabItems1" [(selectTab)] = "currentTab1">
@@ -17,9 +24,15 @@
 </nc-tab>
 
 <h3>2. 四叶加载中</h3>
-<nc-loading [type]="'clover'" [loadSize]="'max'"></nc-loading>
-<nc-loading [type]="'clover'" [loadSize]="'medium'"></nc-loading>
-<nc-loading [type]="'clover'" [loadSize]="'min'"></nc-loading>
+<div class="demo">
+  <nc-spin type="clover"></nc-spin>
+</div>
+<div class="demo">
+  <nc-spin type="clover" size="medium"></nc-spin>
+</div>
+<div class="demo">
+  <nc-spin type="clover" size="small"></nc-spin>
+</div>
 <p>使用方式:</p>
 <nc-tab [tabs]="tabItems2" [(selectTab)] = "currentTab2">
   <div *ngIf="currentTab2 === 'html'">
@@ -32,9 +45,15 @@
 </nc-tab>
 
 <h3>3. 水平加载等待</h3>
-<nc-loading [type]="'horizontal'" [loadSize]="'max'" style="margin:10px 30px;"></nc-loading>
-<nc-loading [type]="'horizontal'" [loadSize]="'medium'" style="margin:10px 30px;"></nc-loading>
-<nc-loading [type]="'horizontal'" [loadSize]="'min'" style="margin:10px 30px;"></nc-loading>
+<div class="demo">
+   <nc-spin type="horizontal" size="large"></nc-spin>
+</div>
+<div class="demo">
+   <nc-spin type="horizontal" size="medium"></nc-spin>
+</div>
+<div class="demo">
+   <nc-spin type="horizontal" size="small"></nc-spin>
+</div>
 <p>使用方式:</p>
 <nc-tab [tabs]="tabItems2" [(selectTab)] = "currentTab2">
   <div *ngIf="currentTab2 === 'html'">

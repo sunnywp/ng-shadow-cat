@@ -1,8 +1,15 @@
-<div class="wrap" [ngSwitch]="type">
-  <div class="clover" *ngSwitchCase="'clover'">
+<ng-container class="wrap" [ngSwitch]="type">
+  <div class="clover" *ngSwitchCase="'clover'" [ngClass]="spinClass">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  <div class="spin" *ngSwitchCase="'horizontal'">
+  <div class="horizontal" *ngSwitchCase="'horizontal'" [ngClass]="spinClass">
+    <i></i>
+    <i></i>
+    <i></i>
   </div>
   <div class="spin" *ngSwitchDefault [ngClass]="spinClass">
   </div>
-</div>
+</ng-container>
