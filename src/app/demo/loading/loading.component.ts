@@ -1,7 +1,4 @@
-/**
- * Created by liuxuwen on 18-5-28.
- */
-import { Component,OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'demo-loading',

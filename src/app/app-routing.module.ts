@@ -1,9 +1,7 @@
-/**
- * Created by liuxuwen on 18-5-28.
- */
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 import { PageNorFoundComponent }   from './page-not-found.component';
+import { ParrotComponent } from  './cop/parrot/parrot.component';
 import { LoadingComponent,TabComponent,ButtonComponent,MessageComponent,ToTopComponent,
   ToolTipComponent,HelpComponent,BreadCrumbComponent,PaginationComponent,SwitchComponent,
   RateComponent,RadioComponent,CheckboxComponent,CollapseComponent,RangeslideComponent,
@@ -20,7 +18,6 @@ import { LoadingComponent,TabComponent,ButtonComponent,MessageComponent,ToTopCom
 
 const appRoutes: Routes = [
   { path: 'components',
-    //component: LoadingComponent,
     children: [
       { path: 'loading', component: LoadingComponent },
       { path: 'tab', component: TabComponent },
@@ -69,7 +66,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'pattern',
-    //component: NavbarComponent,
     children: [
       { path: 'card', component: CardComponent},
       { path: 'navbar', component: NavbarComponent},
@@ -87,11 +83,16 @@ const appRoutes: Routes = [
   },
   {
     path: 'about',
-    //component: GridComponent,
     children: [
       { path: 'about', component: AboutNgCatComponent},
       { path: 'quickstart', component: QuickStartComponent},
       { path: 'grid', component: GridComponent}
+    ]
+  },
+  {
+    path: 'cop',
+    children: [
+      { path: 'parrot', component: ParrotComponent}
     ]
   },
   { path: '',   redirectTo: '/components/loading', pathMatch: 'full' },

@@ -9,7 +9,8 @@ import { Router }  from '@angular/router';
 export class AppComponent {
   menuTypes : any[] = [{'name':'组件','value':'components','isActive':true},
     {'name':'模式','value':'pattern','isActive':false},
-    {'name':'关于','value':'about','isActive':false}];
+    {'name':'关于','value':'about','isActive':false},
+    { name: '前端COP',value:'cop',isActive:false}];
   currentMenu : any;
   isExtend : boolean = true;
   isShowActicle : boolean = true;
@@ -35,6 +36,8 @@ export class AppComponent {
       this.router.navigate(['/about/about']);
     } else if(this.currentMenu.value === 'pattern') {
       this.router.navigate(['/pattern/pageHeader']);
+    } else if(this.currentMenu.value === 'cop') {
+      this.router.navigate(['/cop/parrot']);
     }
     this.isShowActicle = false;
     setTimeout(() => {

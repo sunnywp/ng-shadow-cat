@@ -16,9 +16,9 @@
 <nc-tab [tabs]="tabItems1" [(selectTab)] = "currentTab1">
   <div *ngIf="currentTab1 === 'html'">
     <textarea style="height:80px;">
-      <nc-loading [type]="'normal'" [loadSize]="'max'"></nc-loading>
-      <nc-loading [type]="'normal'" [loadSize]="'medium'"></nc-loading>
-      <nc-loading [loadSize]="'min'"></nc-loading>
+      <nc-spin></nc-spin>
+      <nc-spin size="medium"></nc-spin>
+      <nc-spin size="small"></nc-spin>
     </textarea>
   </div>
 </nc-tab>
@@ -37,9 +37,9 @@
 <nc-tab [tabs]="tabItems2" [(selectTab)] = "currentTab2">
   <div *ngIf="currentTab2 === 'html'">
     <textarea style="height:80px;">
-      <nc-loading [type]="'clover'" [loadSize]="'max'"></nc-loading>
-      <nc-loading [type]="'clover'" [loadSize]="'medium'"></nc-loading>
-      <nc-loading [type]="'clover'" [loadSize]="'min'"></nc-loading>
+      <nc-spin type="clover"></nc-spin>
+      <nc-spin type="clover" size="medium"></nc-spin>
+      <nc-spin type="clover" size="small"></nc-spin>
     </textarea>
   </div>
 </nc-tab>
@@ -58,9 +58,9 @@
 <nc-tab [tabs]="tabItems2" [(selectTab)] = "currentTab2">
   <div *ngIf="currentTab2 === 'html'">
     <textarea style="height:80px;">
-    <nc-loading [type]="'horizontal'" [loadSize]="'max'"></nc-loading>
-    <nc-loading [type]="'horizontal'" [loadSize]="'medium'"></nc-loading>
-    <nc-loading [type]="'horizontal'" [loadSize]="'min'"></nc-loading>
+    <nc-spin type="horizontal" size="large"></nc-spin>
+    <nc-spin type="horizontal" size="medium"></nc-spin>
+    <nc-spin type="horizontal" size="small"></nc-spin>
     </textarea>
   </div>
 </nc-tab>
@@ -78,12 +78,12 @@
   <tbody>
     <tr>
       <td>type</td>
-      <td>代表形状类型，两种取值：normal（一般），clover（四叶形状）,horizontal(水平)</td>
-      <td>normal</td>
+      <td>代表形状类型，两种取值：default（一般），clover（四叶形状）,horizontal(水平)</td>
+      <td>default</td>
     </tr>
     <tr>
       <td>loadSize</td>
-      <td>代表大小，3种取值：max（大），medium（中），min（小）</td>
+      <td>代表大小，3种取值：large（大），medium（中），small（小）</td>
       <td>max</td>
     </tr>
   </tbody>
