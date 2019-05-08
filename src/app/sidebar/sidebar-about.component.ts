@@ -1,6 +1,3 @@
-/**
- * Created by liuxuwen on 18-5-27.
- */
 import { Component, Input, OnInit } from '@angular/core';
 import { Router }  from '@angular/router';
 
