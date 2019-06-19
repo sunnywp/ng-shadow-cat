@@ -1,21 +1,20 @@
-import { NgModule }              from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
-import { PageNorFoundComponent }   from './page-not-found.component';
-import { ParrotComponent } from  './cop/parrot/parrot.component';
-import { PhotoWallComponent } from './cop/photo-wall/photo-wall.component';
-import { LoadingComponent,TabComponent,ButtonComponent,MessageComponent,ToTopComponent,
-  ToolTipComponent,HelpComponent,BreadCrumbComponent,PaginationComponent,SwitchComponent,
-  RateComponent,RadioComponent,CheckboxComponent,CollapseComponent,RangeslideComponent,
-  ProgressComponent,ProportionComponent,DialogComponent,StepComponent,SelectComponent,
-  MutilSelectComponent,CarouselComponent,TransferComponent,TreeComponent,InputComponent,
-  GridComponent,DropdownComponent,AlertComponent,LabelComponent,CardComponent,
-  NavbarComponent,PageHeaderComponent,PagerComponent,ThumbImgComponent,BadgeComponent,
-  ListGroupComponent,AboutNgCatComponent,LayoutComponent,QuickStartComponent,
-  BarChartComponent,PieChartComponent,MenuComponent,AvaterComponent,MsgEifComponent,
-  SkeletonComponent,NumberInputComponent,AffixComponent,FormComponent,AffixDemo1Component,
-  FormInstanceComponent,PhotoViewComponent,YearSelectorComponent,TimeSelectorComponent,
-  MonthSelectorComponent,DateTimeSelectorComponent,DateSelectorComponent,
-  RangeDateSelectorComponent,DropDrawerComponent} from './demo/index';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { PageNorFoundComponent } from './page-not-found.component';
+import { ParrotComponent, PhotoWallComponent, CubeComponent} from  './cop/index';
+import { LoadingComponent, TabComponent, ButtonComponent, MessageComponent, ToTopComponent,
+  ToolTipComponent, HelpComponent, BreadCrumbComponent, PaginationComponent, SwitchComponent,
+  RateComponent, RadioComponent, CheckboxComponent, CollapseComponent, RangeslideComponent,
+  ProgressComponent, ProportionComponent, DialogComponent, StepComponent, SelectComponent,
+  MutilSelectComponent, CarouselComponent, TransferComponent, TreeComponent, InputComponent,
+  GridComponent, DropdownComponent, AlertComponent, LabelComponent, CardComponent,
+  NavbarComponent, PageHeaderComponent, PagerComponent, ThumbImgComponent, BadgeComponent,
+  ListGroupComponent, AboutNgCatComponent, LayoutComponent, QuickStartComponent,
+  BarChartComponent, PieChartComponent, MenuComponent, AvaterComponent, MsgEifComponent,
+  SkeletonComponent, NumberInputComponent, AffixComponent, FormComponent, AffixDemo1Component,
+  FormInstanceComponent, PhotoViewComponent, YearSelectorComponent, TimeSelectorComponent,
+  MonthSelectorComponent, DateTimeSelectorComponent, DateSelectorComponent,
+  RangeDateSelectorComponent, DropDrawerComponent} from './demo/index';
 
 const appRoutes: Routes = [
   { path: 'components',
@@ -94,7 +93,8 @@ const appRoutes: Routes = [
     path: 'cop',
     children: [
       { path: 'parrot', component: ParrotComponent},
-      { path: 'photo', component: PhotoWallComponent}
+      { path: 'photo', component: PhotoWallComponent},
+      { path: 'cube', component: CubeComponent}
     ]
   },
   { path: '',   redirectTo: '/components/loading', pathMatch: 'full' },
