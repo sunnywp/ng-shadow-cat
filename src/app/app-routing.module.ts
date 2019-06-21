@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNorFoundComponent } from './page-not-found.component';
-import { ParrotComponent, PhotoWallComponent, CubeComponent} from  './cop/index';
+import { ParrotComponent, PhotoWallComponent, CubeComponent, ClockComponent} from  './cop/index';
 import { LoadingComponent, TabComponent, ButtonComponent, MessageComponent, ToTopComponent,
   ToolTipComponent, HelpComponent, BreadCrumbComponent, PaginationComponent, SwitchComponent,
   RateComponent, RadioComponent, CheckboxComponent, CollapseComponent, RangeslideComponent,
@@ -94,7 +94,8 @@ const appRoutes: Routes = [
     children: [
       { path: 'parrot', component: ParrotComponent},
       { path: 'photo', component: PhotoWallComponent},
-      { path: 'cube', component: CubeComponent}
+      { path: 'cube', component: CubeComponent},
+      { path: 'clock', component: ClockComponent}
     ]
   },
   { path: '',   redirectTo: '/components/loading', pathMatch: 'full' },

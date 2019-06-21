@@ -17,7 +17,8 @@ export class SidebarCopComponent implements OnInit {
     constructor(private router: Router) {
         this.sideTypes = [{name: '鹦鹉', label: 'parrot', isActive: false, url: '/parrot'},
             {name: '旋转照片墙', label: 'photo', isActive: false, url: '/photo'},
-            {name: '正方体', label: 'cube', isActive: false, url: '/cube'}];
+            {name: '正方体', label: 'cube', isActive: false, url: '/cube'},
+            {name: '时钟', label: 'clock', isActive: false, url: '/clock'}];
     }
 
     ngOnInit() {

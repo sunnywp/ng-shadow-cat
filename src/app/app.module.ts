@@ -9,13 +9,14 @@ import { PageNorFoundComponent} from './page-not-found.component';
 import { ParrotComponent } from './cop/parrot/parrot.component';
 import { PhotoWallComponent } from './cop/photo-wall/photo-wall.component';
 import { CubeComponent } from './cop/cube/cube.component';
+import { ClockComponent } from './cop/clock/clock.component';
 
 @NgModule({
   imports: [
     BrowserModule, HttpClientModule, SidebarModule, AppRoutingModule, DemoModule
   ],
   declarations: [
-    AppComponent, PageNorFoundComponent, ParrotComponent, PhotoWallComponent, CubeComponent
+    AppComponent, PageNorFoundComponent, ParrotComponent, PhotoWallComponent, CubeComponent, ClockComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
