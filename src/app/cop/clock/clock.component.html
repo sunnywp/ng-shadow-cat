@@ -3,7 +3,16 @@
   <div class="bar"></div>
   <div class="clock">
     <div class="plane">
-
+      <div class="num"><span>12</span><span>6</span></div>
+      <div class="num"><span>1</span><span>7</span></div>
+      <div class="num"><span>2</span><span>8</span></div>
+      <div class="num"><span>3</span><span>9</span></div>
+      <div class="num"><span>4</span><span>10</span></div>
+      <div class="num"><span>5</span><span>11</span></div>
+      <div class="hour" [ngStyle]="setHour()"></div>
+      <div class="minute" [ngStyle]="setMinute()"></div>
+      <div class="second" [ngStyle]="setSecond()"></div>
     </div>
+
   </div>
 </div>
